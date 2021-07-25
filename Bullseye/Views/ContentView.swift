@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var alertIsVisible: Bool = false
-    @State private var knockIsVisible: Bool = false
+    @State private var sliderValue: Double = 50.0
+    @State private var game: Game = Game()
     
     var body: some View {
         VStack {
@@ -20,14 +21,15 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
                 .lineSpacing(4.0)
                 .font(.footnote)
-            Text("89")
+            Text(String(game.target))
                 .fontWeight(.black)
                 .font(.largeTitle)
                 .kerning(-1.0)
             HStack {
                 Text("1")
                     .bold()
-                Slider(value: .constant(Double(50)), in: 1.0...100.0)
+                Slider(value: self.$sliderValue, in: 1.0...100.0)
+                //$ makes it binding to the state, which updates it automatically
                 Text("100")
                     .bold()
             }
@@ -38,15 +40,8 @@ struct ContentView: View {
                 Text("Hit me")
             }
             .alert(isPresented: $alertIsVisible, content: {
-                return Alert(title: Text("Hallu"), message: Text("First pop-up"), dismissButton: .default(Text("Coolest thing")))
-            })
-            Button(action: {
-                    self.knockIsVisible = true
-            }) {
-                Text("Knock, knock")
-            }
-            .alert(isPresented: $knockIsVisible, content: {
-                Alert(title: Text("Kimdü?"), message: Text("Eyib olsun."), dismissButton: .default(Text("Kes səsüvi")))
+                var roundedValue: Int = Int(self.sliderValue.rounded())
+                return Alert(title: Text("Hallu"), message: Text("The slider's value is \(roundedValue).\n" + "You scored \(self.game.points(sliderValue: roundedValue)) points this round."), dismissButton: .default(Text("Coolest thing")))
             })
         }
     }
