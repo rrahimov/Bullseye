@@ -18,5 +18,128 @@
             endingLineNumber = "56">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D97CB461-CE2D-44E4-A447-4A432A5BC043"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BullseyeTests/BullseyeTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "D97CB461-CE2D-44E4-A447-4A432A5BC043 - 6621a50369d821a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BullseyeTests.BullseyeTests.__allocating_init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; BullseyeTests.BullseyeTests"
+                  moduleName = "BullseyeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahimov/Documents/RayWenderlich/Bullseye/BullseyeTests/BullseyeTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "D97CB461-CE2D-44E4-A447-4A432A5BC043 - d1210bc7884a87d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BullseyeTests.BullseyeTests.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; BullseyeTests.BullseyeTests"
+                  moduleName = "BullseyeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahimov/Documents/RayWenderlich/Bullseye/BullseyeTests/BullseyeTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "D97CB461-CE2D-44E4-A447-4A432A5BC043 - 5d40285986c66dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BullseyeTests.BullseyeTests.__allocating_init(selector: ObjectiveC.Selector) -&gt; BullseyeTests.BullseyeTests"
+                  moduleName = "BullseyeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahimov/Documents/RayWenderlich/Bullseye/BullseyeTests/BullseyeTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "D97CB461-CE2D-44E4-A447-4A432A5BC043 - 3032aafb2a6549a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BullseyeTests.BullseyeTests.init(selector: ObjectiveC.Selector) -&gt; BullseyeTests.BullseyeTests"
+                  moduleName = "BullseyeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahimov/Documents/RayWenderlich/Bullseye/BullseyeTests/BullseyeTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "D97CB461-CE2D-44E4-A447-4A432A5BC043 - ed79f806904a9352"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BullseyeTests.BullseyeTests.__allocating_init() -&gt; BullseyeTests.BullseyeTests"
+                  moduleName = "BullseyeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahimov/Documents/RayWenderlich/Bullseye/BullseyeTests/BullseyeTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "D97CB461-CE2D-44E4-A447-4A432A5BC043 - a664b003576c2335"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BullseyeTests.BullseyeTests.init() -&gt; BullseyeTests.BullseyeTests"
+                  moduleName = "BullseyeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahimov/Documents/RayWenderlich/Bullseye/BullseyeTests/BullseyeTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "D97CB461-CE2D-44E4-A447-4A432A5BC043 - bf0d581e477e1fcf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BullseyeTests.BullseyeTests.__deallocating_deinit"
+                  moduleName = "BullseyeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahimov/Documents/RayWenderlich/Bullseye/BullseyeTests/BullseyeTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
