@@ -33,12 +33,20 @@ struct ContentView: View {
                 Text("100")
                     .bold()
             }
+            .padding()
             Button(action: {
                 print("Hello broseph")
                 alertIsVisible = true
             }) {
-                Text("Hit me")
+                Text("Hit me".uppercased())
+                    .bold()
+                    .font(.title3)
             }
+            .padding(20.0)
+            .foregroundColor(.white)
+            .background(Color.blue)
+            .cornerRadius(21.0)
+            
             .alert(isPresented: $alertIsVisible, content: {
                 let roundedValue = Int(sliderValue.rounded())
                 return Alert(title: Text("Hallu"), message: Text("The slider's value is \(roundedValue).\n" + "You scored \(game.points(sliderValue: roundedValue)) points this round."), dismissButton: .default(Text("Coolest thing")))
