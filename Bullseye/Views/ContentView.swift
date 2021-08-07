@@ -19,21 +19,25 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             VStack {
                 Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
+                    .foregroundColor(Color("TextColor"))
                     .bold()
                     .kerning(2.0)
                     .multilineTextAlignment(.center)
                     .lineSpacing(4.0)
                     .font(.footnote)
                 Text(String(game.target))
+                    .foregroundColor(Color("TextColor"))
                     .fontWeight(.black)
                     .font(.largeTitle)
                     .kerning(-1.0)
                 HStack {
                     Text("1")
+                        .foregroundColor(Color("TextColor"))
                         .bold()
                     Slider(value: $sliderValue, in: 1.0...100.0)
                     //$ makes it binding to the state, which updates it automatically
                     Text("100")
+                        .foregroundColor(Color("TextColor"))
                         .bold()
                 }
                 .padding()
@@ -66,6 +70,11 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
         ContentView()
+            .previewLayout(.fixed(width: 568, height: 320))
+        ContentView()
+            .preferredColorScheme(.dark)
+        ContentView()
+            .preferredColorScheme(.dark)
             .previewLayout(.fixed(width: 568, height: 320))
     }
 }
