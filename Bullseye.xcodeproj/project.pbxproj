@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		909BC7AC26BE1BEC007A7BF4 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909BC7AB26BE1BEC007A7BF4 /* TextViews.swift */; };
+		909BC7B026C03263007A7BF4 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909BC7AF26C03263007A7BF4 /* RoundedViews.swift */; };
 		90AEEFD926A46ABE00BB307C /* BullseyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AEEFD826A46ABE00BB307C /* BullseyeApp.swift */; };
 		90AEEFDB26A46ABE00BB307C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AEEFDA26A46ABE00BB307C /* ContentView.swift */; };
 		90AEEFDD26A46ABF00BB307C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90AEEFDC26A46ABF00BB307C /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		909BC7AB26BE1BEC007A7BF4 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
+		909BC7AF26C03263007A7BF4 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		90AEEFD526A46ABE00BB307C /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90AEEFD826A46ABE00BB307C /* BullseyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeApp.swift; sourceTree = "<group>"; };
 		90AEEFDA26A46ABE00BB307C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				90AEEFDA26A46ABE00BB307C /* ContentView.swift */,
 				909BC7AB26BE1BEC007A7BF4 /* TextViews.swift */,
+				909BC7AF26C03263007A7BF4 /* RoundedViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			files = (
 				90AEEFDB26A46ABE00BB307C /* ContentView.swift in Sources */,
 				909BC7AC26BE1BEC007A7BF4 /* TextViews.swift in Sources */,
+				909BC7B026C03263007A7BF4 /* RoundedViews.swift in Sources */,
 				90AEEFEB26ADDC3800BB307C /* Game.swift in Sources */,
 				90AEEFD926A46ABE00BB307C /* BullseyeApp.swift in Sources */,
 			);

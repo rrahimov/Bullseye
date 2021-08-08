@@ -73,6 +73,10 @@ struct HitMeButton: View {
             LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.3), Color.clear]), startPoint: .top, endPoint: .bottom)
         })
         .cornerRadius(21.0)
+        .overlay(
+            RoundedRectangle(cornerRadius: 21.0)
+                .strokeBorder(Color.white, lineWidth: 2.0)
+        )
         
         .alert(isPresented: $alertIsVisible, content: {
             let roundedValue = Int(sliderValue.rounded())
