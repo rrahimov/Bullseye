@@ -14,7 +14,7 @@ struct ContentView: View {
     @State private var game = Game()
     
     var body: some View {
-        ZStack {
+        ZStack { 
             BackgroundView(game: $game)
             VStack {
                 InstructionView(game: $game)
