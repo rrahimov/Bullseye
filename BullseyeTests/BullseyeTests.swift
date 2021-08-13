@@ -34,6 +34,12 @@ class BullseyeTests: XCTestCase {
         XCTAssertEqual(score, 95)
     }
     
+    func testNewRound() {
+        game.startNewRound(point: 100)
+        XCTAssertEqual(game.score, 100)
+        XCTAssertEqual(game.round, 2)
+    }
+    
     func testExample() throws {
         //XCTAssertEqual(game.points(sliderValue: 50), 0)
         // This is an example of a functional test case.

@@ -25,4 +25,9 @@ struct Game {
         //1 line code: 100 - abs(self.target - sliderValue)
         //no need to write return if it's 1 line
     }
+    //mutating, because it changes values inside the struct (e.g. score, round..)
+    mutating func startNewRound(point: Int) {
+        score += point
+        round += 1
+    }
 }
