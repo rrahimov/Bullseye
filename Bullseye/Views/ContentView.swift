@@ -18,8 +18,19 @@ struct ContentView: View {
             BackgroundView(game: $game)
             VStack {
                 InstructionView(game: $game)
+                    .padding(.bottom, alertIsVisible ? 0 : 100)
+                // if alertisvisible then do first, if not second
+                if alertIsVisible {
+                    PointsView(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+                        .transition(.scale)
+                } else {
+                    HitMeButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+                        .transition(.scale)
+                }
+            }
+            if !alertIsVisible {
                 SliderView(sliderValue: $sliderValue)
-                HitMeButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+                    .transition(.scale)
             }
         }
     }
@@ -58,8 +69,9 @@ struct HitMeButton: View {
     
     var body: some View {
         Button(action: {
-            print("Hello broseph")
-            alertIsVisible = true
+            withAnimation {
+                alertIsVisible = true
+            }
         }) {
             Text("Hit me".uppercased())
                 .bold()
@@ -71,16 +83,11 @@ struct HitMeButton: View {
             Color("ButtonColor")
             LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.3), Color.clear]), startPoint: .top, endPoint: .bottom)
         })
-        .cornerRadius(21.0)
+        .cornerRadius(Constants.General.roundRectCornerRadius)
         .overlay(
-            RoundedRectangle(cornerRadius: 21.0)
-                .strokeBorder(Color.white, lineWidth: 2.0)
+            RoundedRectangle(cornerRadius: Constants.General.roundRectCornerRadius)
+                .strokeBorder(Color.white, lineWidth: Constants.General.strokeWidth)
         )
-        
-        .alert(isPresented: $alertIsVisible, content: {
-            let roundedValue = Int(sliderValue.rounded())
-            return Alert(title: Text("Hallu"), message: Text("The slider's value is \(roundedValue).\n" + "You scored \(game.points(sliderValue: roundedValue)) points this round."), dismissButton: .default(Text("Coolest thing")))
-        })
     }
 }
 
